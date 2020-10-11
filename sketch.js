@@ -85,7 +85,7 @@ function draw() {
    if(particle!=null){
      particle.display()
      if(particle.body.position.y>760){
-       if(particle.body.position.x<300){
+       if(particle.body.position.x<300&&particle.body.position.x>0){
          score = score+500
          particle = null
          if(turn >=5){
